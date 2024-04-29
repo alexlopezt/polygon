@@ -38,8 +38,8 @@ namespace ProyectoAviones
                 intersecciones = 0;
                 foreach (Linea lp in lineasPoligono)
                 {
-                    imaginaria.CheckIntersec(lp);
-                    if (imaginaria.HayInterseccion(lp))
+                    if (imaginaria.CheckIntersec(lp))
+                    // if (imaginaria.HayInterseccion(lp))
                     {
                         intersecciones++;
                     }
