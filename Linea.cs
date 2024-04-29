@@ -34,13 +34,13 @@ namespace ProyectoAviones
             
             Console.WriteLine("El punto de intersección es: ({0}, {1})", x, y);
 
-            if ((x >= this.origen.X && x <= this.final.X) || (x >= this.final.X && x >= this.origen.X))
+            if ((x >= this.origen.X && x <= this.final.X) || (x >= this.final.X && x <= this.origen.X))
             {
-                if ((y <= this.origen.Y && y <= this.final.Y) || (y >= this.final.Y && y >= this.origen.Y))
+                if ((y >= this.origen.Y && y <= this.final.Y) || (y >= this.final.Y && y <= this.origen.Y))
                 {
-                    if ((x <= l2.origen.X && x <= l2.final.X) || (x >= l2.origen.X && x >= this.final.X))
+                    if ((x >= l2.origen.X && x <= l2.final.X) || (x >= l2.origen.X && x <= this.final.X))
                     {
-                        if ((y <= l2.origen.Y && y <= l2.final.Y) || (y >= l2.final.Y && y >= this.origen.Y))
+                        if ((y >= l2.origen.Y && y <= l2.final.Y) || (y >= l2.final.Y && y <= this.origen.Y))
                         {
                             Console.WriteLine("El punto intersecciona las dos rectas");
                             return true;
@@ -53,6 +53,8 @@ namespace ProyectoAviones
             return false;
            
         }
+
+        /*
         public bool HayInterseccion(Linea linea)
         {
             //Calculamos pendientes
@@ -79,5 +81,6 @@ namespace ProyectoAviones
 
 
         }
+        */
     }
 }
