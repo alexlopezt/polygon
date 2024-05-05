@@ -18,8 +18,11 @@ namespace ProyectoAviones
 
             // Console.WriteLine("Se cruzan?: {0}", seCruzan);
 
+            // Linea l1 = new Linea(new Point(5,1), new Point(5,20));
+            // Linea l2 = new Linea(new Point(3,1), new Point(3,20));
+            // l1.FindIntersection(l2);
             Poligono pol = new Poligono(creaVertices());
-            bool resultado = pol.estaDentro(new Point(120,190));
+            bool resultado = pol.estaDentro(new Point(10,26));
             Console.WriteLine("Está dentro?: {0}",resultado);
         }
 
